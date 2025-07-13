@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #222;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.quiz-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px 35px;
+  border-radius: 18px;
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+#tag {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: darkslateblue;
+}
+
+#progress {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+#question {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 14px 18px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: white;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+}
+
+#next-btn, #quit-btn {
+  width: 100%;
+  padding: 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+#next-btn {
+  background-color: gray;
+  color: white;
+  border: none;
+}
+
+#next-btn:hover {
+  background-color: #555;
+}
+
+#quit-btn {
+  background-color: gray;
+  color: white;
+  border: none;
+}
+
+#quit-btn:hover {
+  background-color:grey;
+}
+
+
+.correct {
+  background-color: darkviolet !important;
+  color: white;
+}
+
+.wrong {
+  background-color: lightpink !important;
+  color: white;
+}
+
+
+@media screen and (max-width: 600px) {
+  .quiz-container {
+    padding: 25px 20px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  #question {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
